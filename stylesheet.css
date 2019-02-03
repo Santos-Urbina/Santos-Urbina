@@ -2,6 +2,7 @@ body {
   background-color: white;
 }
 #name {
+  font-family: 'Century Gothic', sans-serif;
   font-size: 44px;
   color: #00703c;
   text-align: center;
