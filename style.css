@@ -70,6 +70,12 @@ ul li:hover {
     background-color: #282828;
 }
 
+#rainbow {
+    height: 4px;
+    background-color: #33ffff;
+    background-image: linear-gradient(to right, red, #ff4000, orange, #ffbf00, yellow, #bfff00, green, blue, indigo, violet, #ff00bf);
+}
+
 .wrapper {
     padding-top: 80px;
     padding-left: 250px;
