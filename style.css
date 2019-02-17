@@ -25,6 +25,13 @@ p {
     font-weight: 300;
 }
 
+#not_bold {
+    font-size: 14px;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
 a {
     display: inline-block;
 }
