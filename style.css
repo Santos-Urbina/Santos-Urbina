@@ -100,3 +100,22 @@ ul li:hover {
     padding-left: 250px;
     padding-right: 250px;
 }
+
+#projectWrapper {
+    width: 50%;
+    height: 210px;
+    background-color: #282828;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+#CCE {
+    width: 300px;
+    height: 180px;
+}
+
+th {
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+}
+
