@@ -5,12 +5,24 @@
 
 #intro {
     font-family: "Century Gothic", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 100;
     padding-bottom: 10px;
 }
 
 body {
     background-color: #eee;
+}
+
+p {
+    padding-top: 4px;
+    font-size: 14px;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bold;
+}
+
+.sub {
+    font-weight: 300;
 }
 
 a {
@@ -71,7 +83,7 @@ ul li:hover {
 }
 
 #rainbow {
-    height: 4px;
+    height: 3.5px;
     background-color: #33ffff;
     background-image: linear-gradient(to right, red, #ff4000, orange, #ffbf00, yellow, #bfff00, green, blue, indigo, violet, #ff00bf);
 }
