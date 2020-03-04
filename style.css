@@ -1,121 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#intro {
-    font-family: "Century Gothic", sans-serif;
-    font-size: 18px;
-    font-weight: 100;
-    padding-bottom: 10px;
-}
-
 body {
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
 }
 
-p {
-    padding-top: 4px;
-    font-size: 14px;
-    font-family: "Century Gothic", sans-serif;
-    font-weight: bold;
+@font-face {
+    font-family: 'Raleway';
+    src: url(./fonts/Raleway-Regular.ttf);
 }
-
-.sub {
-    font-weight: 300;
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url(./fonts/Raleway-Bold.ttf);
 }
-
-#not_bold {
-    font-size: 14px;
-    font-family: "Century Gothic", sans-serif;
-    font-weight: 400;
-    padding-top: 4px;
+@font-face {
+    font-family: 'Raleway-semibold';
+    src: url(./fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Raleway-light';
+    src: url(./fonts/Raleway-Light.ttf);
 }
 
 a {
+    text-decoration: none;
+}
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(40, 38, 58);
+}
+
+#intro-content {
+    margin: auto;
+    padding: 35vh 0 35vh;
+    width: 50%;
+    height: 15vh;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    font-family: 'Raleway';
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+}
+
+#highlight {
+    color: rgb(255, 0, 106);;
+}
+
+#intro-button {
+    width: 30%;
+    color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    cursor: pointer;
     display: inline-block;
+    font-family: 'Raleway-light';
+    font-size: 18px;
+    margin: auto;
+    transition: background-color .5s ease;
+}
+
+#intro-button i {
+    margin-left: 10px;
+}
+
+#intro-button:hover {
+    background-color: rgb(54, 214, 235);
+    border: 2px solid rgb(54, 214, 235);
+}
+
+#intro-button:hover i {
+    transform: rotate(90deg);
+    transition: transform .3s linear;
 }
 
 nav {
-    width: 100%;
-    height: 100px;
-    background-color: black;
+    height: 5vh;
+    background-color: rgb(54, 51, 78);
 }
 
-ul {
-    list-style-type: none;
-    float: right;
-}
-
-ul li {
-    height: 100px;
-    color: white;
-    float: left;
-    line-height: 100px;
-}
-
-ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    padding: 0 20px;
-    color: white;
-    font-family: "Century Gothic", sans-serif;
-}
-
-ul li:hover {
-    text-decoration: none;
-    background-color: #282828;
-}
-
-.title {
-    color: black;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 48px;
-    font-weight: 300;
-    text-decoration: none;
-}
-
-#logo {
-    width: 60px;
-    height: 70px;
-    display: block;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-}
-
-#logo:hover {
-    background-color: #282828;
-}
-
-#rainbow {
-    height: 3.5px;
-    background-color: #33ffff;
-    background-image: linear-gradient(to right, red, #ff4000, orange, #ffbf00, yellow, #bfff00, green, blue, indigo, violet, #ff00bf);
-}
-
-.wrapper {
-    padding-top: 80px;
-    padding-left: 250px;
-    padding-right: 250px;
-}
-
-#projectWrapper {
+#nav-menu {
     width: 50%;
-    height: 210px;
-    background-color: #282828;
-    padding-left: 250px;
-    padding-right: 250px;
+    height: 100%;
+    margin: auto;
+    display: flex;
 }
 
-#CCE {
-    width: 300px;
-    height: 180px;
+.nav-link {
+    text-align: center;
+    font-family: 'Raleway-light';
+    color: rgb(255, 255, 255);
+    padding: 0px 25px 0px;
+    font-size: 22px;
+    line-height: 5vh;
+    flex-grow: 1;
 }
 
-th {
-    font-family: "Century Gothic", sans-serif;
-    color: white;
+.nav-link a {
+    color: rgb(255, 255, 255);
 }
 
+.nav-link a:hover {
+    color: rgb(255, 0, 106);
+}
+
+
+#line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 0, 106);
+    margin: auto;
+}
+
+#main-content {
+    height: 100vh;
+}
