@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alex Santos-Urbina</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fa-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <!--Bulma-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+      integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Alex Santos-Urbina</title>
-        <link rel="stylesheet" href="style.css">
-        <!--fa-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <!--Bulma-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css"></script>
-        <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!--D3-->
-        <script src="https://d3js.org/d3.v5.min.js"></script>
-        <!-- <script type="text/javascript">
-            $(document).ready(function() {
-                $('#intro-button').hover(function() {
-                    console.log('changing color, rotating arrow');
-                    $(this).find('i').css('transform', 'rotate(90deg)');
-                    $(this).find('i').css('transition', 'transform 1s linear;');
-                });
-            });
-        </script> -->
-    </head>
-
-    <body>
-        <div id="intro">
-            <script src="./viz.js"></script>
-            <div id="intro-content">
-                <div class="intro-text">
-                    Hello, I'm <span id="highlight">Alex Santos</span>.
-                </div>
-                <div class="intro-text">I'm a software developer.</div>
-                <br>
-                <a href="#main-content"><div id="intro-button">View my work <i class="fas fa-arrow-right fa-sm"></i></div></a>
-            </div>
+  <body>
+    <div id="intro">
+      <script src="./viz.js"></script>
+      <div id="intro-content">
+        <div class="intro-text">
+          Hello, I'm <span id="highlight">Alex Santos</span>.
         </div>
+        <div class="intro-text">I'm a software developer.</div>
+        <br />
+        <a href="#main-page"
+          ><div id="intro-button">
+            View my work <i class="fas fa-arrow-right fa-sm"></i></div
+        ></a>
+      </div>
+    </div>
 
-        <div id="main-content">
-
-            <nav>
-                <div id="nav-menu">
-                    <div class="nav-link"><a href="#">Home</a></div>
-                    <div class="nav-link"><a href="#">About</a></div>
-                    <div class="nav-link"><a href="#">Portfolio</a></div>
-                    <div class="nav-link"><a href="#">Contact</a></div>
-                </div>
-            </nav>
-
-            <div id="line"></div>
-
+    <div id="main-page">
+      <nav>
+        <div id="nav-menu">
+          <div class="nav-link"><a href="#">Home</a></div>
+          <div class="nav-link"><a href="#main-page">About</a></div>
+          <div class="nav-link"><a href="#">Portfolio</a></div>
+          <div class="nav-link"><a href="#contact">Contact</a></div>
         </div>
-    </body>
+      </nav>
+      <div id="line"></div>
+    </div>
+
+    <div id="contact">
+      <nav>
+        <div id="nav-menu">
+          <div class="nav-link"><a href="#">Home</a></div>
+          <div class="nav-link"><a href="#main-page">About</a></div>
+          <div class="nav-link"><a href="#">Portfolio</a></div>
+          <div class="nav-link"><a href="#contact">Contact</a></div>
+        </div>
+      </nav>
+      <div id="line"></div>
+      <div id="contact-info"></div>
+    </div>
+  </body>
 </html>
